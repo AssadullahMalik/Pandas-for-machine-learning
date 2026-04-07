@@ -1,0 +1,23 @@
+import pandas as pd
+import numpy as np
+
+data = {
+    "Name": ["Ali", "Ahmed", None],
+    "Age": [20, None, 21]
+}
+df = pd.DataFrame(data)
+
+# Missing values
+print(df.isnull())
+
+# Drop missing
+print(df.dropna())
+
+# Fill missing
+print(df.fillna({"Name": "Unknown", "Age": 0}))
+
+# Remove duplicates
+df2 = pd.DataFrame({
+    "A": [1, 2, 2, 3]
+})
+print(df2.drop_duplicates())
