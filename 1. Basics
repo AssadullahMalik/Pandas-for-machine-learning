@@ -1,0 +1,19 @@
+import pandas as pd
+import numpy as np
+
+# Series
+s = pd.Series([10, 20, 30, 40])
+print("Series:\n", s)
+
+# DataFrame from dictionary
+data = {
+    "Name": ["Ali", "Ahmed", "Sara"],
+    "Age": [20, 22, 21]
+}
+df = pd.DataFrame(data)
+print("\nDataFrame:\n", df)
+
+# From NumPy
+arr = np.array([[1, 2], [3, 4]])
+df2 = pd.DataFrame(arr, columns=["A", "B"])
+print("\nFrom NumPy:\n", df2)
