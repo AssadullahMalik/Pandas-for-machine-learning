@@ -1,0 +1,10 @@
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+
+print("Head:\n", df.head())
+print("Tail:\n", df.tail())
+print("Info:\n")
+print(df.info())
+print("Describe:\n", df.describe())
+print("Columns:", df.columns)
