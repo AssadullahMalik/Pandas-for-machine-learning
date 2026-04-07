@@ -1,0 +1,19 @@
+import pandas as pd
+
+df = pd.DataFrame({
+    "Name": ["Ali", "Ahmed", "Sara"],
+    "Marks": [80, 90, 85]
+})
+
+# Add column
+df["Grade"] = ["B", "A", "A"]
+
+# Update values
+df["Marks"] = df["Marks"] + 5
+
+# Sorting
+print(df.sort_values(by="Marks", ascending=False))
+
+# Apply function
+df["Marks"] = df["Marks"].apply(lambda x: x + 2)
+print(df)
