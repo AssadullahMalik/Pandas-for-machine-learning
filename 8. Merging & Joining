@@ -1,0 +1,19 @@
+import pandas as pd
+
+df1 = pd.DataFrame({
+    "ID": [1, 2],
+    "Name": ["Ali", "Ahmed"]
+})
+
+df2 = pd.DataFrame({
+    "ID": [1, 2],
+    "Marks": [80, 90]
+})
+
+# Merge
+merged = pd.merge(df1, df2, on="ID")
+print("Merged:\n", merged)
+
+# Concat
+concat = pd.concat([df1, df2], axis=1)
+print("Concatenated:\n", concat)
