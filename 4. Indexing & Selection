@@ -1,0 +1,17 @@
+import pandas as pd
+
+data = {
+    "Name": ["Ali", "Ahmed", "Sara"],
+    "Age": [20, 22, 21]
+}
+df = pd.DataFrame(data)
+
+# Column selection
+print(df["Name"])
+
+# Row selection
+print(df.loc[0])     # by label
+print(df.iloc[1])    # by index
+
+# Filtering
+print(df[df["Age"] > 20])
