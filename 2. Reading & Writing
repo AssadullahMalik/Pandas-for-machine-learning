@@ -1,0 +1,11 @@
+import pandas as pd
+
+# Read CSV
+df = pd.read_csv("data.csv")
+print(df.head())
+
+# Save to CSV
+df.to_csv("output.csv", index=False)
+
+# Read Excel (requires openpyxl)
+# df = pd.read_excel("data.xlsx")
